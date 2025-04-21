@@ -1,6 +1,6 @@
 # 🔐 Public Key Cryptography Workshop — 2024
   
-This folder contains the practice challenges created for the **Cybersecurity Club Breaking "Public Key Cryptography" Workshop (2024)**. These challenges are designed to help students get hands-on experience with the basics of public key cryptography in a fun and accessible way.
+This folder contains the practice challenges created for the **Cybersecurity Club Breaking "Public Key Cryptography" Workshop in May (2024)**. These challenges are designed to help students get hands-on experience with the basics of public key cryptography in a fun and accessible way.
 
 ---
 
