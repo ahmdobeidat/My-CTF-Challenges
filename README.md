@@ -1,6 +1,6 @@
 # My CTF Challenges 🕵️‍♂️🔐
 
-Welcome to **My-CTF-Challenges** — a collection of original cybersecurity challenges written and curated by me for the **Cybersecurity Club at PSUT**, trainings I've delivered, and various Capture The Flag (CTF) competitions I've contributed to.
+Welcome to **My-CTF-Challenges**; a collection of original cybersecurity challenges written and curated by me for the **Cybersecurity Club at PSUT**, trainings I've delivered, and various Capture The Flag (CTF) competitions I've contributed to.
 
 This repository is a showcase of puzzles designed to test and build skills across a wide range of infosec topics. Whether you're a student, hobbyist, or aspiring professional, you'll find something here to learn from or be challenged by.
 
@@ -10,8 +10,8 @@ This repository is a showcase of puzzles designed to test and build skills acros
 
 Each challenge is organized in its own folder and typically includes:
 
-- `README.md` — Basic challenge description
-- `challenge` or `dist/` — Files provided to players
+- `README.md`: Basic challenge description
+- `challenge` or `dist/`: Files provided to players
 
 ---
 
