@@ -1,0 +1,1 @@
+FLAG = 'METACTF{blum_blum_shub_is_a_pseudo_random_number_generator}'

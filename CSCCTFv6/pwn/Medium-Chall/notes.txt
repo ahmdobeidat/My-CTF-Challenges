@@ -1,0 +1,66 @@
+RBP - > 0x00007fffffffdcf0
+
+RSP - > 0x00007fffffffdcc0
+        0x00007ffff7d83000
+        0x00007ffffffde000
+
+        0x00007ffff7fa1bd2
+
+gef➤  info proc mappings
+process 59018
+Mapped address spaces:
+
+          Start Addr           End Addr       Size     Offset  Perms  objfile
+            0x400000           0x401000     0x1000        0x0  r--p   /home/l0mb4rd/CTFs/writing/CSCCTFv6/pwn/Medium-Chall/7aleeb
+            0x401000           0x402000     0x1000     0x1000  r-xp   /home/l0mb4rd/CTFs/writing/CSCCTFv6/pwn/Medium-Chall/7aleeb
+            0x402000           0x403000     0x1000     0x2000  r--p   /home/l0mb4rd/CTFs/writing/CSCCTFv6/pwn/Medium-Chall/7aleeb
+            0x403000           0x404000     0x1000     0x2000  r--p   /home/l0mb4rd/CTFs/writing/CSCCTFv6/pwn/Medium-Chall/7aleeb
+            0x404000           0x405000     0x1000     0x3000  rw-p   /home/l0mb4rd/CTFs/writing/CSCCTFv6/pwn/Medium-Chall/7aleeb
+      0x7ffff7d83000     0x7ffff7d86000     0x3000        0x0  rw-p   
+      0x7ffff7d86000     0x7ffff7dae000    0x28000        0x0  r--p   /usr/lib/x86_64-linux-gnu/libc.so.6
+      0x7ffff7dae000     0x7ffff7f43000   0x195000    0x28000  r-xp   /usr/lib/x86_64-linux-gnu/libc.so.6
+      0x7ffff7f43000     0x7ffff7f9b000    0x58000   0x1bd000  r--p   /usr/lib/x86_64-linux-gnu/libc.so.6
+      0x7ffff7f9b000     0x7ffff7f9c000     0x1000   0x215000  ---p   /usr/lib/x86_64-linux-gnu/libc.so.6
+      0x7ffff7f9c000     0x7ffff7fa0000     0x4000   0x215000  r--p   /usr/lib/x86_64-linux-gnu/libc.so.6
+      0x7ffff7fa0000     0x7ffff7fa2000     0x2000   0x219000  rw-p   /usr/lib/x86_64-linux-gnu/libc.so.6
+      0x7ffff7fbb000     0x7ffff7fbd000     0x2000        0x0  rw-p   
+      0x7ffff7fbd000     0x7ffff7fc1000     0x4000        0x0  r--p   [vvar]
+      0x7ffff7fc1000     0x7ffff7fc3000     0x2000        0x0  r-xp   [vdso]
+      0x7ffff7fc3000     0x7ffff7fc5000     0x2000        0x0  r--p   /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+      0x7ffff7fc5000     0x7ffff7fef000    0x2a000     0x2000  r-xp   /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+      0x7ffff7fef000     0x7ffff7ffa000     0xb000    0x2c000  r--p   /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+      0x7ffff7ffb000     0x7ffff7ffd000     0x2000    0x37000  r--p   /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+      0x7ffff7ffd000     0x7ffff7fff000     0x2000    0x39000  rw-p   /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+      0x7ffffffde000     0x7ffffffff000    0x21000        0x0  rw-p   [stack]
+
+
+  1%|█▏                                                                                  | 118/8192 [00:02<03:20, 40.30it/s]b'CSCCTF{SGUgd': 0x7ffff7fa0079
+  9%|███████▋                                                                            | 754/8192 [00:17<02:36, 47.56it/s]b'CSCCTF{SGUgd2FzIGEgQ1RGIGJveSBzaGUgd2FzIGFuIEFJIGdp': 0x7ffff7fa02f9
+ 19%|███████████████▍                                                                   | 1525/8192 [00:38<03:21, 33.14it/s]b'CSCCTF{SGUgd2FzIGEgQ1RGIGJveSBzaGUgd2FzIGFuIEFJIGdpcmw}': 0x7ffff7fa05f8
+ 75%|██████████████████████████████████████████████████████████████▌                    | 6169/8192 [02:10<00:51, 39.54it/s]b'CSCCTF{SGUgd2FzIGEgQ1RGI': 0x7ffff7fa181b
+ 83%|█████████████████████████████████████████████████████████████████████▏             | 6831/8192 [02:25<00:38, 35.15it/s]b'CSCCTF{SGUgd2FzIGE': 0x7ffff7fa1ab1
+100%|███████████████████████████████████████████████████████████████████████████████████| 8192/8192 [03:00<00:00, 45.39it/s]
+  2%|█▉                                                                                | 1237/53248 [00:27<27:29, 31.54it/s]b'CSCCTF{SGUgd2FzIGEgQ1R': 0x7ffff7fa24d8
+  4%|███▎                                                                              | 2167/53248 [00:52<25:47, 33.01it/s]b'CSCCTF{SGUgd2FzIGEgQ1RGIGJveSBzaGUgd2FzIGFuIEF': 0x7ffff7fa287a
+  4%|███▌                                                                              | 2287/53248 [00:55<26:05, 32.56it/s]b'CSCCTF{SGUgd2FzIGEgQ1RGIGJveSBzaGUgd2FzIGFuIEFJIGdpcmw}': 0x7ffff7fa28f0
+ 10%|████████▍                                                                         | 5474/53248 [02:21<25:07, 31.70it/s]b'CSCCTF{SGUgd2FzIGEgQ1RGIGJveSBzaGUgd2FzIGFuIEFJIGdpcmw}': 0x7ffff7fa3563
+ 28%|██████████████████████▌                                                          | 14810/53248 [06:52<22:59, 27.87it/s]b'CSCCTF{SGUgd2FzIGEgQ1RGIGJveSBzaGUgd2FzIGFuIEFJIGdpcmw}': 0x7ffff7fa59db
+ 30%|████████████████████████▎                                                        | 16007/53248 [07:29<20:53, 29.72it/s]b'CSCCTF{SGUgd2Fz': 0x7ffff7fa5ec7
+ 33%|███████████████████████████                                                      | 17772/53248 [08:23<22:31, 26.26it/s]b'CSCCTF{SGUgd2FzIGEgQ1RGIGJveSBzaGUgd2FzIGFuIEFJIGdpcmw}': 0x7ffff7fa656c
+ 36%|█████████████████████████████▌                                                   | 19403/53248 [09:15<20:17, 27.80it/s]b'CSCCTF{SGUgd2FzIGEgQ1RGIGJveSBzaGUgd2FzIGFuIEFJIGdpcmw}': 0x7ffff7fa6bcd
+ 44%|███████████████████████████████████▎                                            | 23509/53248 [11:23<01:59, 249.65it/s]b'CSCCTF{SGUgd2FzIGEgQ1RGIGJveSBzaGUgd2FzIGFuIEFJIGdpcmw}': 0x7ffff7fa7be8
+ 46%|█████████████████████████████████████▍                                           | 24607/53248 [12:00<16:23, 29.12it/s]b'CSCCTF{SGUgd2FzIGEgQ1RGIGJveSBzaGUgd2FzIGFuIEFJIGdpcmw}': 0x7ffff7fa8022
+ 50%|████████████████████████████████████████▍                                        | 26583/53248 [13:05<15:57, 27.84it/s]b'CSCCTF{SGUgd2FzIGEgQ1RGIGJveSBzaGUgd2FzIGFuIEFJIGdpcmw}': 0x7ffff7fa87d8
+ 55%|████████████████████████████████████████████▎                                    | 29106/53248 [14:30<15:45, 25.54it/s]b'CSCCTF{SGUgd2FzIGEgQ1RGIG': 0x7ffff7fa91b2
+ 60%|████████████████████████████████████████████████▋                                | 32033/53248 [16:14<12:35, 28.09it/s]b'CSCCTF{SGUgd2FzIGEgQ1RGIGJveSBzaGUgd2FzIGFuIEFJIGdpcmw}': 0x7ffff7fa9d22
+ 63%|██████████████████████████████████████████████████▊                              | 33381/53248 [17:00<13:08, 25.20it/s]b'CSCCTF{SGUgd2FzIGEgQ1RGIGJveSBzaGUgd2FzIGFuIEFJIGdpcmw}': 0x7ffff7faa265
+ 64%|████████████████████████████████████████████████████                             | 34259/53248 [17:31<12:15, 25.83it/s]b'CSCCTF{SGUgd2FzIGEgQ1RGIGJveSBzaGUgd2FzIGFuIEFJIGdpcmw}': 0x7ffff7faa5d3
+ 75%|████████████████████████████████████████████████████████████▍                    | 39722/53248 [20:50<09:14, 24.37it/s]b'CSCCTF{SGUgd2FzIGEgQ1RGIGJveSBzaGUgd2FzIGFuIEFJIGdpcmw}': 0x7ffff7fabb2a
+ 80%|████████████████████████████████████████████████████████████████▌                | 42476/53248 [22:38<07:37, 23.55it/s]b'CSCCTF{SGUgd2FzIGEgQ1RGIGJveSBzaGUgd2FzIGFuIEFJIGdpcmw}': 0x7ffff7fac60e
+ 83%|███████████████████████████████████████████████████████████████████▍             | 44373/53248 [23:50<06:27, 22.89it/s]b'CSCCTF{SGUgd2FzIGEgQ1RGIGJveSBzaGUgd2FzIGFuIEFJIGdpcmw}': 0x7ffff7facd55
+ 84%|███████████████████████████████████████████████████████████████████▋             | 44517/53248 [23:56<06:25, 22.65it/s]b'CSCCTF{SGUgd2FzIGEgQ1RGIGJveSBzaGUgd2FzIGFuIEFJIGdpcmw}': 0x7ffff7facde6
+ 85%|████████████████████████████████████████████████████████████████████▌            | 45085/53248 [24:18<05:39, 24.01it/s]b'CSCCTF{SGUgd2FzIGEgQ1RGIGJveSBzaGUgd2FzIGFuIEFJIGdpcm': 0x7ffff7fad01f
+ 85%|████████████████████████████████████████████████████████████████████▋            | 45172/53248 [24:22<05:47, 23.21it/s]b'CSCCTF{SGUgd2FzIGEgQ1RGIGJveSBzaGUgd2FzIGFuIEFJIGdpcmw}': 0x7ffff7fad074
+ 89%|███████████████████████████████████████████████████████████████████████▉         | 47306/53248 [25:46<04:23, 22.55it/s]b'CSCCTF{SGUgd2FzIGEgQ1RGIGJveSBzaGUgd2FzIGFuIEFJIGdpcmw}': 0x7ffff7fad8ca
+ 92%|██████████████████████████████████████████████████████████████████████████▏      | 48804/53248 [26:49<03:19, 22.29it/s]b'CSCCTF{SGUgd2FzIGEgQ1RGIGJveSBzaGUgd2FzIGFuIEFJIGdpcmw}': 0x7ffff7fadea5
+100%|█████████████████████████████████████████████████████████████████████████████████| 53248/53248 [29:53<00:00, 29.69it/s]
