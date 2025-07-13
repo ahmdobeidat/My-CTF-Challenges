@@ -12,7 +12,6 @@ Each challenge is organized in its own folder and typically includes:
 
 - `README.md` — Basic challenge description
 - `challenge` or `dist/` — Files provided to players
-- `flag.txt` — The expected flag (for reference only)
 
 ---
 
